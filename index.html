@@ -8,9 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- DesyUi CDN -->
+    <!-- DaisyUi CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 <style>
 .font-poppins {
@@ -24,6 +24,7 @@
           colors: {
             clifford: '#da373d',
             'bike-primary': '#E76F51',
+            'bike-primary-bg': 'rgba(231, 111, 81, 0.1)',
           }
         }
       }
@@ -32,7 +33,7 @@
 </head>
 <body class="font-poppins">
     <!-- Header Section -->
-     <Header class="md:container mx-auto">
+     <Header class="mx-auto md:container">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="flex-1">
@@ -40,7 +41,7 @@
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
+                        class="w-5 h-5"
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -60,10 +61,10 @@
                     <li><a>Contact</a></li>
                     </ul>
                   </div>
-                  <a class="font-bold text-xl">Bike Dekho</a>
+                  <a class="text-xl font-bold">Bike Dekho</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
+                <div class="hidden navbar-center lg:flex">
+                  <ul class="px-1 menu menu-horizontal">
                     <li><a>Home</a></li>
                     <li><a>Shop</a></li>
                     <li><a>News</a></li>
@@ -71,13 +72,143 @@
                   </ul>
                 </div>
                 <div>
-                  <a class="btn bg-bike-primary text-white">Login</a>
+                  <a class="text-white btn bg-bike-primary">Login</a>
                 </div>
               </div>
         </nav>
+        <!-- Slider -->
+        <div class="w-full carousel bg-bike-primary-bg">
+            <div id="slide1" class="relative w-full lg:h-[550px] carousel-item">
+              <div class="flex flex-col p-12 lg:p-24 lg:flex-row">
+                <!-- text content -->
+                 <div class="flex-1 space-y-7"><h2 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h2>
+                <p>Amet minim mollit non deserunt ullamco 
+                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="text-white btn bg-bike-primary">Purchase</button>
+                </div>
+                 <!-- Slider Image -->
+                  <div class="flex-1"><img src="images/slider/bike1.png" class="w-[406px]" /></div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4">❮</a>
+                <a href="#slide2">❯</a>
+              </div>
+            </div>
+            <div id="slide2" class="relative w-full carousel-item">
+              <div class="flex flex-col p-12 lg:p-24 lg:flex-row">
+                <!-- text content -->
+                 <div class="flex-1 space-y-7"><h2 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h2>
+                <p>Amet minim mollit non deserunt ullamco 
+                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="text-white btn bg-bike-primary">Purchase</button>
+                </div>
+                 <!-- Slider Image -->
+                  <div class="flex-1"><img src="images/slider/bike2.png" class="w-[406px]" /></div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1">❮</a>
+                <a href="#slide3">❯</a>
+              </div>
+            </div>
+            <div id="slide3" class="relative w-full carousel-item">
+              <div class="flex flex-col p-12 lg:p-24 lg:flex-row">
+                <!-- text content -->
+                 <div class="flex-1 space-y-7"><h2 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h2>
+                <p>Amet minim mollit non deserunt ullamco 
+                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="text-white btn bg-bike-primary">Purchase</button>
+                </div>
+                 <!-- Slider Image -->
+                  <div class="flex-1"><img src="images/slider/bike3.png" class="w-[406px]" /></div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2">❮</a>
+                <a href="#slide4">❯</a>
+              </div>
+            </div>
+            <div id="slide4" class="relative w-full carousel-item">
+              <div class="flex flex-col p-12 lg:p-24 lg:flex-row">
+                <!-- text content -->
+                 <div class="flex-1 space-y-7"><h2 class="text-6xl font-bold">Ride-on R15 V4 <br> with Smile</h2>
+                <p>Amet minim mollit non deserunt ullamco 
+                  est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+                <button class="text-white btn bg-bike-primary">Purchase</button>
+                </div>
+                 <!-- Slider Image -->
+                  <div class="flex-1"><img src="images/slider/bike4.png" class="w-[406px]" /></div>
+              </div>
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3">❮</a>
+                <a href="#slide1">❯</a>
+              </div>
+            </div>
+          </div>
      </Header>
      <!-- Main Section -->
-    <Main class="md:container mx-auto"></Main>
+    <Main class="mx-auto md:container">
+      <!-- Featured Bike Section -->
+       <section>
+        <section class="py-12 bg-white">
+          <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold text-gray-900">
+              Featured Bikes In This Year
+            </h2>
+            <p class="mt-1 text-sm text-bike-primary">Best bike collection</p>
+            <div class="flex flex-wrap justify-center mt-16 gap-28">
+              <img
+                src="/images/others/feature-bike.png"
+                alt="Bike 1"
+                class="object-contain h-auto w-60"
+              />
+              <img
+                src="/images/others/feature-bike.png"
+                alt="Bike 2"
+                class="object-contain h-auto w-60"
+              />
+              <img
+                src="/images/others/feature-bike.png"
+                alt="Bike 3"
+                class="object-contain h-auto w-60"
+              />
+            </div>
+          </div>
+        </section>
+        
+       </section>
+      <!-- News Card Section -->
+       <section class="my-24">
+        <h3 class="mb-12 text-5xl font-bold text-center">Latest News</h3>
+        <!-- card -->
+        <div class="flex flex-wrap items-center justify-center gap-6">
+          <div class="p-4 bg-white border border-gray-200 rounded-lg w-96">
+              <img src="images/others/latest1.png" alt="Bike" class="w-full rounded-lg">
+              <h3 class="mt-3 text-lg font-semibold">Ducati XDIAVEL S-73</h3>
+              <p class="mt-2 text-sm text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <button class="px-4 py-2 mt-3 text-white btn bg-bike-primary">Read More</button>
+          </div>
+      
+          <div class="p-4 bg-white border border-gray-200 rounded-lg w-96">
+              <img src="images/others/latest2.png" alt="Bike" class="w-full rounded-lg">
+              <h3 class="mt-3 text-lg font-semibold">Ducati XDIAVEL S-73</h3>
+              <p class="mt-2 text-sm text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <button class="px-4 py-2 mt-3 transition duration-300 text-bike-primary btn btn-outline hover:bg-bike-primary">Read More</button>
+          </div>
+      
+          <div class="p-4 bg-white border border-gray-200 rounded-lg w-96">
+              <img src="images/others/latest3.png" alt="Bike" class="w-full rounded-lg">
+              <h3 class="mt-3 text-lg font-semibold">Ducati XDIAVEL S-73</h3>
+              <p class="mt-2 text-sm text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed id nisi lectus at.
+              </p>
+              <button class="px-4 py-2 mt-3 transition duration-300 text-bike-primary btn btn-outline hover:bg-bike-primary">Read More</button>
+          </div>
+      </div>
+       </section>
+    </Main>
     <!-- Footer Section -->
      <Footer></Footer>
 </body>
